@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="The Civellum. Independent ideas, sharp perspectives. A reader-powered journal of economics, technology and society.">
+  <title>The Civellum | Independent voices</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./config.js"></script>
+  <script type="module" src="./assets/app.js"></script>
+</head>
+<body>
+  <div class="utility"><div class="wrap utility-inner"><span id="current-date">THE CIVELLUM · INDEPENDENT JOURNALISM</span><span class="utility-tag">IDEAS WORTH READING · VOICES WORTH HEARING</span></div></div>
+  <header class="site-header wrap">
+    <a class="brand" href="#/" aria-label="The Civellum homepage"><span class="brand-mark">C<span class="brand-dot">.</span></span><span class="brand-stack"><strong>THE CIVELLUM</strong><small>Independent voices. Informed perspectives.</small></span></a>
+    <div class="header-actions" id="header-actions"><span class="loading-line"></span></div>
+  </header>
+  <nav class="site-nav" aria-label="Sections"><div class="wrap nav-inner">
+    <a href="#/" data-route="/">Front Page</a><a href="#/explore" data-route="/explore">Latest</a>
+    <a href="#/explore?category=Economics" data-route="/explore">Economics</a>
+    <a href="#/explore?category=Technology" data-route="/explore">Technology</a>
+    <a href="#/explore?category=Politics" data-route="/explore">Politics</a>
+    <a href="#/explore?category=Culture" data-route="/explore">Culture</a>
+    <a href="#/about" data-route="/about">About</a>
+    <a class="nav-mobile-write" href="#/write">Write <span aria-hidden="true">↗</span></a>
+  </div></nav>
+  <div id="flash" class="flash" role="status" aria-live="polite"></div>
+  <main id="app" class="wrap page" tabindex="-1"><div class="skeleton-page"><div class="skeleton tall"></div><div class="skeleton"></div></div></main>
+  <footer class="site-footer"><div class="wrap footer-grid">
+    <div><a href="#/" class="footer-brand">THE CIVELLUM<span>.</span></a><p>Independent ideas. Original voices.<br>A publication built by its writers and readers.</p></div>
+    <div><strong>EXPLORE</strong><a href="#/explore">Latest stories</a><a href="#/write">Write a story</a><a href="#/about">Our mission</a></div>
+    <div><strong>YOUR ACCOUNT</strong><a href="#/me">My articles</a><a href="#/bookmarks">Saved stories</a><a href="#/settings">Settings</a></div>
+    <div><strong>THE CIVELLUM</strong><a href="mailto:valcorasara@gmail.com?subject=The%20Civellum%20Editorial">Editorial contact</a><span>Respect original reporting.</span><span>© <span id="year"></span> The Civellum.</span></div>
+  </div></footer>
+  <dialog id="report-dialog" class="dialog"><form method="dialog" class="dialog-inner"><div class="dialog-header"><h2>Report content</h2><button value="cancel" class="icon-btn" aria-label="Close">✕</button></div><p>Help keep this publication trustworthy. Reports go to moderators.</p><input type="hidden" name="target-id" id="report-target-id"><input type="hidden" name="target-type" id="report-target-type"><label>Reason<select name="reason" required><option>Spam</option><option>Harassment</option><option>Plagiarism</option><option>Harmful content</option><option>False information</option><option>Other</option></select></label><label>Additional details (optional)<textarea name="details" maxlength="1200" rows="4"></textarea></label><div class="dialog-footer"><button type="button" class="btn ghost" data-action="close-report">Cancel</button><button type="button" class="btn primary" data-action="submit-report">Submit report</button></div></form></dialog>
+</body>
+</html>
