@@ -1,5 +1,5 @@
-// Only public values here. Never paste service_role, secret keys, or passwords.
+
 window.CIVELLUM_CONFIG = {
-  supabaseUrl: 'PASTE_YOUR_SUPABASE_PROJECT_URL',
-  supabasePublishableKey: 'PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY'
+  supabaseUrl: "https://simzfyymdeohzlfdkiqi.supabase.co",
+  supabasePublishableKey: "sb_publishable_fuDh2lE5UXHR30YeFQX_CA_-pCqcTg2"
 };
